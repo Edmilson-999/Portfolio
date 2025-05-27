@@ -46,7 +46,7 @@ cd portfolio
 Este projeto não requer dependências adicionais além dos arquivos estáticos. Certifique-se de ter um navegador web e um servidor local.
 
 
- ### Execute um Servidor Local:
+ ## Execute um Servidor Local:
 
 Use o servidor HTTP integrado do Python (requer Python 3):python -m http.server
 

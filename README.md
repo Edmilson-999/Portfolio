@@ -46,7 +46,7 @@ cd portfolio
 Este projeto não requer dependências adicionais além dos arquivos estáticos. Certifique-se de ter um navegador web e um servidor local.
 
 
- ## Execute um Servidor Local:
+ ### Execute um Servidor Local:
 
 Use o servidor HTTP integrado do Python (requer Python 3):python -m http.server
 
@@ -90,8 +90,9 @@ Veja minhas habilidades e projetos (adicione conteúdo ao projects.html conforme
  ## Contribuição
  
 Sinta-se à vontade para fazer um fork deste repositório e enviar pull requests se desejar contribuir. Sugestões de melhorias são bem-vindas!
-Contato
 
+
+## Contato
 LinkedIn: Edmilson Spencer
 GitHub: Edmilson-999
 Twitter/X: @EAlves1025

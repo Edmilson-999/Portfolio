@@ -1,0 +1,264 @@
+/* === Section Title === */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title span {
+    color: #00abf0;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #00abf0;
+}
+
+/* === About Content Layout === */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-content h3 {
+    color: #00abf0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.about-text,
+.about-image {
+    flex: 1 1 300px; /* Mais flexível e responsivo */
+}
+
+/* === About Image Container === */
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+/* === Timeline Styles === */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    margin: 30px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #00abf0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #00abf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a192f;
+    font-size: 18px;
+}
+
+.timeline-content {
+    background: #112240;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #e6f1ff; /* Melhor contraste */
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content h4 {
+    color: #00abf0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.timeline-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* === Personal Qualities === */
+.personal-qualities {
+    margin: 40px 0;
+}
+
+.personal-qualities h3 {
+    color: #00abf0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.personal-qualities ul {
+    list-style: none;
+}
+
+.personal-qualities li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.personal-qualities i {
+    color: #00abf0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+/* === Image Frame === */
+.image-frame {
+    position: relative;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 171, 240, 0.3);
+}
+
+.image-frame img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.image-frame:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 171, 240, 0.4);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 171, 240, 0.8);
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* === Buttons === */
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background: #00abf0;
+    color: #0a192f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #00abf0;
+}
+
+.btn:hover {
+    background: #0a192f;
+    color: #00abf0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 171, 240, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-outline:hover {
+    background: #00abf0;
+    color: #0a192f;
+}
+
+.btn i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-icon {
+        left: -30px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .personal-qualities li {
+        padding-left: 25px;
+    }
+
+    .personal-qualities i {
+        top: 3px;
+    }
+}
+

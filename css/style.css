@@ -89,12 +89,12 @@ body {
 }
 
 /* Importar estilos específicos */
-@import url('/css/Home.css');
-@import url('/css/about.css');
-@import url('/css/skills.css');  
-@import url('/css/project.css');
-@import url('/css/education.css');
-@import url('/css/contact.css');
+@import url('./Home.css');
+@import url('./about.css');
+@import url('./skills.css');  
+@import url('./project.css');
+@import url('./education.css');
+@import url('./contact.css');
 
 /* Animations */
 @keyframes fadeIn {

@@ -88,14 +88,6 @@ body {
     transform: translateY(0);
 }
 
-/* Importar estilos específicos */
-@import url('./Home.css');
-@import url('./about.css');
-@import url('./skills.css');  
-@import url('./project.css');
-@import url('./education.css');
-@import url('./contact.css');
-
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
